@@ -1,4 +1,4 @@
-a,b=map(float,input().split())
-c=float(input())
+a,b=map(int,input().split())
+c=int(input())
 
 print(a,b,c)
