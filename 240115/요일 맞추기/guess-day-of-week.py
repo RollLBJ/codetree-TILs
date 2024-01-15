@@ -15,5 +15,5 @@ else:
     total_day=d2-d1
         
 
-print(total_day)
+# print(total_day)
 print(weekday[-(abs(total_day)%7)])
