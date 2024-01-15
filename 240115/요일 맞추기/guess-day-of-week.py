@@ -12,5 +12,5 @@ elif m2<m1:
 
 if d2>d1:
     print(weekday[(daysum+d2-d1)%7])
-elif d2<d1:
+elif d2<=d1:
     print(weekday[-(daysum+d1-d2)%7])
