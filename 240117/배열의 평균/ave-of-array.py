@@ -7,6 +7,6 @@ for i in t:
 
 print()
 for i in range(len(t[0])):
-    print((t[0][i]+t[1][i])/2, end=" ")
+    print("{:.1f}".format((t[0][i]+t[1][i])/2), end=" ")
 print()
-print(total/8)
+print("{:.1f}".format(total/8))
