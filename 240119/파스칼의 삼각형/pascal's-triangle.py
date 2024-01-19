@@ -6,6 +6,8 @@ for i in range(1,n):
     for j in range(1,n):
         if j<=i:
             result[i][j] = result[i-1][j-1] + result[i-1][j]
+        else:
+            result[i][j]=0
 
 
 
