@@ -5,6 +5,10 @@ result = [[0]*n for _ in range(n)]
 for i in range(1,n):
     for j in range(1,n):
         if j<=i:
+            result[i][j] = 1
+for i in range(1,n):
+    for j in range(1,n):
+        if j<=i:
             result[i][j] = result[i-1][j-1] + result[i-1][j]
 
 
