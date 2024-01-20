@@ -9,4 +9,4 @@ for i in a:
         total += len(i)
         cnt += 1
 
-print(total / cnt if cnt > 0 else 0)
+print("{} {:.2f}".format(cnt,total / cnt if cnt > 0 else 0))
