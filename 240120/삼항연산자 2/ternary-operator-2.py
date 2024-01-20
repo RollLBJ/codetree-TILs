@@ -1,3 +1,3 @@
 a = int(input())
 
-print(a==1 ? 1 : 'f')
+print(1 if a == 1 else 'f')
