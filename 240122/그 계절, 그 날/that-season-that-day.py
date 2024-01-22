@@ -1,5 +1,5 @@
 def is_yoon(year):
-    if year%4 ==0 and year%100==0 and year%400:
+    if year%4 ==0 and year%100==0 and year%400==1:
         return True
     elif year%4==0 and year%100==0:
         return False
