@@ -1,6 +1,6 @@
 cnt=0
 arr = []
- while(True):
+while(True):
     _temp = input()
     if _temp == 0:
         break
