@@ -1,13 +1,11 @@
 a,b = input().split()
-num=[]
-for i, chr in enumerate(a):
-    if chr.isnumeric():
-        num.append(chr[:i])
-        break
+ans = []
+for num, i in enumerate(a):
+    if not(i.isnumeric()):
+       ans.append(a[:num])
 
-for i, chr in enumerate(b):
-    if chr.isnumeric():
-        num.append(chr[:i])
-        break
+for num, i in enumerate(b):
+    if not(i.isnumeric()):
+       ans.append(b[:num])
 
-print(int(num[0]) + int(num[1]))
+print(int(ans[0]) + int(ans[1]))
