@@ -7,5 +7,5 @@ for num, i in enumerate(a):
 for num, i in enumerate(b):
     if not(i.isnumeric()):
        ans.append(b[:num])
-
+print(ans)
 print(int(ans[0]) + int(ans[1]))
