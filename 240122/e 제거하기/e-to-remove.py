@@ -1,2 +1,2 @@
 a=input()
-print(a.replace('e',''))
+print(a.replace('e','',1))
