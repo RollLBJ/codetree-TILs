@@ -9,4 +9,6 @@ else:
 for num, i in enumerate(b):
     if not(i.isnumeric()):
        ans.append(b[:num])
+else:
+    ans.append(a)
 print(int(ans[0]) + int(ans[1]))
