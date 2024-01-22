@@ -13,7 +13,6 @@ y,m,d = map(int,input().split())
 month = [31,28,31,30,31,30,31,31,30,31,30,31]
 if is_yoon(y):
     month[1]=29
-print(y,m,d,month)
 if d>=1 and d<=month[m-1]:
     if m in [3, 4, 5]:
         print("Spring")
