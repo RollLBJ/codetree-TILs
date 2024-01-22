@@ -23,3 +23,5 @@ if m>=1 and m<=12 and y>=1 and y<=3000:
             print("Fall")
         else:
             print("Winter")
+else:
+    print(-1)
