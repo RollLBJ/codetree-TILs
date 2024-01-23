@@ -6,8 +6,8 @@ for i in a:
         cnt.append(i)
     else:
         if b_cnt==1: 
-            break
             print('Yes')
+            break
         b_cnt+=1
 else:
     print('No')
