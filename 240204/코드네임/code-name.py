@@ -10,6 +10,7 @@ minscore = 101
 minscore_index = -1
 for i in range(5):
     codename, score = input().split()
+    score = int(score)
     members[i].codename = codename
     members[i].score = score
     if score<minscore:
