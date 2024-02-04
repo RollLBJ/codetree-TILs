@@ -14,7 +14,6 @@ for i in range(5):
     members[i].codename = codename
     members[i].score = score
     if score<minscore:
-        print(score, i)
         minscore = score
         minscore_index = i
 
