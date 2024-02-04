@@ -1,5 +1,5 @@
 class member:
-    def __init__(self, codename, score):
+    def __init__(self, codename='none', score=-1):
         self.codename = codename
         self.score = score
 
