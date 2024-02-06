@@ -1,0 +1,13 @@
+MONTHS = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+WEEKEND = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+
+m1, d1, m2, d2 = map(int, input().split())
+week = input()
+
+days = MONTHS[m1] - d1 + 1 + sum(MONTHS[m1+1:m2]) + d2
+
+
+if WEEKEND.index(week) <= (days % 7):
+    print(days//7 + 1)
+else:
+    print(days//7)
