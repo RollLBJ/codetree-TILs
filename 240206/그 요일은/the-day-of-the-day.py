@@ -13,7 +13,7 @@ if WEEKEND.index(week)+1 <= (days % 7) and days > 7:
     # print("y")
     print(days//7 + 1)
 elif days<7:
-  if WEEKEND.index(week) <= (days % 7):
+  if WEEKEND.index(week)+1 <= (days % 7):
     print(1)
 else:
     print(days//7)
