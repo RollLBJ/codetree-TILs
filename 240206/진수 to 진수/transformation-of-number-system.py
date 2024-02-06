@@ -2,15 +2,16 @@ a, b = map(int,input().split())
 n = int(input())
 
 res = 0
+m=1
 while(True):
   if n//10 == 0:
-    res += n * a
+    res += n * m
     break
   else:
-    res += n%10 * a
+    res += n%10 * m
     n = n//10
-    a *= a
-
+    m *= a
+# print(res)
 ans = []
 while(True):
   if res//b==0:
@@ -21,8 +22,6 @@ while(True):
     res = res//b
 
 _flag = False
-for i in ans:
-  if i != 0:
-    _flag = True
-  if _flag:
-    print(i,end='')
+
+for i in ans[::-1]:
+  print(i,end='')
