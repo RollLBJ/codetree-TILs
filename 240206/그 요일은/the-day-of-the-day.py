@@ -6,9 +6,10 @@ week = input()
 
 days = MONTHS[m1] - d1 + 1 + sum(MONTHS[m1+1:m2]) + d2 if m1 != m2 else d2 - d1 + 1
 # print(days)
+# print(days//7, days%7)
 
 
-if WEEKEND.index(week) <= (days % 7) and days > 7:
+if WEEKEND.index(week)+1 <= (days % 7) and days > 7:
     # print("y")
     print(days//7 + 1)
 elif days<7:
