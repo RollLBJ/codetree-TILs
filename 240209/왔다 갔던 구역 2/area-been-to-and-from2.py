@@ -4,10 +4,10 @@ A = [list(map(lambda x: x if x.isalpha() else int(x), input().split())) for _ in
 result = [0]*2000
 
 index = 1000
-result[index] = 1000
+result[index] = 1
 
 for cmd in A:
-  for _ in range(cmd[0]):
+  for _ in range(cmd[0]): 
     if cmd[1] == 'R':
       result[index] += 1
       index += 1
@@ -29,10 +29,10 @@ for i in result:
   # if i>=1:
     # print(i, end=' ')
   
-  if i>=2 and i<1000:
+  if i>=2:
     cnt+=1
-  if i>1000:
-    cnt+=1
+
+  
   #   _flag = True
   # if i<=1 and _flag==True:
   #   cnt-=1
