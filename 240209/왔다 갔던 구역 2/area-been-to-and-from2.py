@@ -31,4 +31,4 @@ for i in result:
   
   
 
-print(cnt)
+print(cnt-1)
